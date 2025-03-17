@@ -1,11 +1,11 @@
+import "./css/reset.css";
 import "./css/background.css";
 import "./css/App.css";
 import "./css/Strength.css";
 import "./css/Infobox.css";
 import "./css/Carrer.css";
-// import "./css/Portfolio.css";
-
-
+import "./css/Carrer.css";
+import "./css/Portfolio.css";
 
 import { useEffect, useRef } from "react";
 import Circle from "./components/common/shape/Circle";
@@ -109,29 +109,12 @@ function App() {
     <>
       <Cursor />
       <div className="main"></div>
-      <div
-        className="test">
-        <section
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            position: "relative",
-            alignItems: "center",
-          }}
-        >
+      <div className="test">
+        <section className="main_container">
           <Circle />
           <MainSlideTexts />
         </section>
-        <section
-          className="info"
-          style={{
-            transform: "translateY(200px)",
-            width: "100%",
-            position: "relative",
-            zIndex: "4",
-          }}
-        >
+        <section className="info">
           <Infobox />
         </section>
       </div>
@@ -140,11 +123,7 @@ function App() {
       </section>
 
       <Carrer />
-      <section
-        className="portbox"
-        style={{ width: "100%", position: "relative" }}
-      >
-        
+      <section className="portbox">
         <Portfolio7 />
         <Portfolio8 />
         <Portfolio5 />
@@ -154,14 +133,7 @@ function App() {
         <Portfolio2 />
         <Portfolio1 />
       </section>
-      <section
-        className="contactbox"
-        style={{
-          width: "100%",
-          backgroundColor: "black",
-          padding: "300px 0px 200px 0px",
-        }}
-      >
+      <section className="contactbox">
         <Contact />
       </section>
     </>

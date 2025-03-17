@@ -8,10 +8,11 @@ const Portfolio1 = () => {
       className="port1" style={{
         width: "100%",
         backgroundColor: "#ff540f",
-        height: "600px",
+        height: "100%",
         color: "white",
-        padding: "100px 0px 250px 0px",
+        padding: "10% 0%",
         position: "absoulte",
+        justifyContent: "center",
         top: "0px",
         transform: "translateY(1000px)",
       }}>

@@ -1,0 +1,102 @@
+.contactbox {
+  width: 100%;
+  background-color: black;
+  padding: 300px 0px 200px 0px;
+}
+.contact_detail {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  opacity: 0;
+  transform: translateY(100px);
+}
+.contact_title {
+  color: white;
+  font-size: 50px;
+  font-family: "Bold";
+}
+.contact_title_text {
+  color: #ffedbd;
+}
+.contact_text_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.contact_text_box {
+  color: white;
+  align-items: center;
+  display: flex;
+  font-size: 25px;
+}
+.contanct_icon_text_box{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+.contact_text_box > span {
+  margin-left: 15px;
+}
+.contact_icon_box {
+  display: flex;
+  gap: 20px;
+  font-size: 80px;
+}
+.contact_kakao_img {
+  width: 200px;
+  border-radius: 10px;
+}
+.contact_thank_box {
+  color: white;
+  align-items: end;
+  display: flex;
+  font-size: 50px;
+  justify-content: flex-end;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .contactbox {
+    padding: 200px 20px;
+  }
+  .contact_detail {
+    width: 85%
+  }
+  .contact_title {
+    font-size: 32px;
+  }
+  .contact_title_text{
+    font-size: 15px;
+  }
+  .contact_text_container {
+    margin-top: 15px;
+    gap: 15px;
+
+    flex-direction: column;
+  }
+  .contact_text_box {
+    font-size: 16px;
+  }
+
+
+  .contact_text_box > span {
+    margin-left: 10px;
+  }
+  .contact_icon_box {
+    font-size: 55px;
+    gap: 20px;
+  }
+  .contact_kakao_img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+  }
+  .contact_thank_box {
+    font-size: 32px;
+    justify-content: flex-start;
+    margin-top: 50px;
+  }
+}
