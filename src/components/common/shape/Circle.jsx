@@ -1,6 +1,7 @@
 const Circle = () => {
   return (
     <div
+      className="circle-main"
       style={{
         width: "30vw",
         height: "30vw",

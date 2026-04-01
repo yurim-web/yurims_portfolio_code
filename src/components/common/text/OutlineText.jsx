@@ -4,8 +4,9 @@ const OutlineText = ({ text }) => {
       style={{
         fontSize: "8vw",
         color: "transparent",
-        webkitTextStroke: "3px   #00adb4",
+        WebkitTextStroke: "3px #00adb4",
         fontFamily: "Bold",
+        whiteSpace: "nowrap",
       }}
     >
       {text}
