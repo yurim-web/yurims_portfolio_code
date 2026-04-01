@@ -33,13 +33,24 @@ gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   useEffect(() => {
+    const isMobile = window.innerWidth <= 768;
+
     gsap
       .timeline({
-        scrollTrigger: triggers.main,
+        scrollTrigger: {
+          ...triggers.main,
+          end: isMobile ? "+=400%" : "+=200%",
+        },
       })
-      .to("." + targets.textName, motion.slideToRightx)
-      .to("." + targets.textFrontend, motion.slideToLeftx, "<")
-      .to(".info", { y: -500 }, "<");
+      .to(".info", { y: "-100%", opacity: 1, duration: 1, ease: "power1.out" })
+      .to(".circle-main", {
+        scale: 3,
+        opacity: 0,
+        duration: 0.3,
+        ease: "power2.in",
+      }, "<")
+      .to("." + targets.textName, motion.slideToRightx, "<")
+      .to("." + targets.textFrontend, motion.slideToLeftx, "<");
 
     gsap
       .timeline({
@@ -98,8 +109,9 @@ function App() {
         scrollTrigger: {
           trigger: ".contactbox",
           start: "top top",
-          end: "center bottom",
+          end: "+=100%",
           pin: true,
+          scrub: 1,
         },
       })
       .to(".contact_detail", { duration: 1.5, y: 0, opacity: 1 });

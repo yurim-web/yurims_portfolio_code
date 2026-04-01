@@ -1,8 +1,8 @@
 export const motion = {
   slideToRightx: {
-    x: 2000,
+    x: "150vw",
   },
   slideToLeftx: {
-    x: -2000,
+    x: "-150vw",
   },
 };
