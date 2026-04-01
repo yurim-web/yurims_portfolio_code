@@ -39,7 +39,7 @@ const Portfolio8 = () => {
                 <Stack stack={"Gsap.js"} bgcolor={"#C0FFF0"} />
               </div>
             </div>
-            <a href="https://yurim-web.github.io/imele_clone/" target="_blank">
+            <a href="https://yurim-web.github.io/imele_clone_renew/" target="_blank">
               <button
                 className="port_link_btn"
                 style={{ backgroundColor: "black", color: "white" }}

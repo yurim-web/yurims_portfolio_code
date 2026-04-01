@@ -10,11 +10,15 @@ const Portfolio1 = () => {
         backgroundColor: "#ff540f",
         height: "100%",
         color: "white",
-        padding: "10% 0%",
-        position: "absoulte",
+        padding: "5vh 0%",
+        alignItems: "center",
+        display: "flex",
+        position: "absolute",
         justifyContent: "center",
         top: "0px",
-        transform: "translateY(1000px)",
+        left: "0px",
+        transform: "translateY(100vh)",
+        zIndex: 8,
       }}>
       <article className="port_container">
         <h1 className="port_title">PORTFOLIO.</h1>
