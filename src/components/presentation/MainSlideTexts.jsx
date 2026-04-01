@@ -4,6 +4,7 @@ import SlideText from "../common/text/SlideText";
 const MainSlideTexts = () => {
   return (
     <div
+      className="main_slide_texts"
       style={{
         position: "absolute",
         width: "100%",
@@ -15,7 +16,7 @@ const MainSlideTexts = () => {
       <SlideText className={targets.textName} text={"LEE YU RIM"} />
       <SlideText
         className={targets.textFrontend}
-        text={"PUBLISHER"}
+        text={"FRONTEND"}
         justifyContent={"end"}
       />
     </div>
