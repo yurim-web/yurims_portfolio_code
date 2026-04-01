@@ -1,7 +1,10 @@
 .contactbox {
   width: 100%;
   background-color: black;
-  padding: 300px 0px 200px 0px;
+  padding: 15vh 0px 10vh 0px;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 .contact_detail {
   width: 100%;
@@ -60,7 +63,11 @@
 
 @media screen and (max-width: 768px) {
   .contactbox {
-    padding: 200px 20px;
+    padding: 10vh 20px;
+  }
+  .contact_detail {
+    opacity: 1;
+    transform: translateY(0);
   }
   .contact_detail {
     width: 85%

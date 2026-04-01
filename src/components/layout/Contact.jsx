@@ -1,6 +1,4 @@
-import { useState } from "react";
 import { FaGithub, FaPhoneAlt } from "react-icons/fa";
-import { FaSquareInstagram } from "react-icons/fa6";
 import { IoHappySharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import "../../css/Contact.css";
@@ -23,9 +21,6 @@ const Contact = () => {
           <div className="contact_icon_box">
             <a href="https://github.com/yurim-web" target="_blank">
               <FaGithub color="white"/>
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-              <FaSquareInstagram color="white"/>
             </a>
           </div>
         </div>
